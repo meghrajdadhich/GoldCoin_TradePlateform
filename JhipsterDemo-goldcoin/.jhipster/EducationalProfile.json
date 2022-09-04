@@ -1,0 +1,45 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipName": "resume",
+            "otherEntityName": "resume",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "eduTitle",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "eduStartDate",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "eduEndDate",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "eduUniversity",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "eduCollageName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "eduLocation",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20180406181613",
+    "entityTableName": "educational_profile",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "angularJSSuffix": "jobportal",
+    "microserviceName": "JhipsterDemo"
+}

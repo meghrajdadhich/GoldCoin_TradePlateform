@@ -1,0 +1,89 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "jobReviewer",
+            "otherEntityName": "user",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "job"
+        },
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "jobCompany",
+            "otherEntityName": "companyProfile",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "job"
+        },
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "jobLocation",
+            "otherEntityName": "location",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "job"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "recruiter",
+            "otherEntityName": "recruiter",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "many-to-many",
+            "otherEntityRelationshipName": "",
+            "relationshipName": "skills",
+            "otherEntityName": "jobSkills",
+            "otherEntityField": "id",
+            "ownerSide": true
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "jobId",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "jobTitle",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "jobDescription",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "jobRole",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "jobType",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "jobIndustry",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "jobSalary",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "jobStartDate",
+            "fieldType": "Instant"
+        },
+        {
+            "fieldName": "jobEndDate",
+            "fieldType": "Instant"
+        }
+    ],
+    "changelogDate": "20180406181614",
+    "entityTableName": "job",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "angularJSSuffix": "jobportal",
+    "microserviceName": "JhipsterDemo"
+}

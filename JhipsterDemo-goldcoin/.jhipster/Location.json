@@ -1,0 +1,63 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "user",
+            "otherEntityName": "user",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "location"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "locId",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "locType",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "locTitle",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "locAddress2",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "locAddress1",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "locArea",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "locCity",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "locState",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "locCountry",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "locPinCode",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20180406181616",
+    "entityTableName": "location",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "angularJSSuffix": "jobportal",
+    "microserviceName": "JhipsterDemo"
+}

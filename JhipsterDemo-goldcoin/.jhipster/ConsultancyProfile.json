@@ -1,0 +1,27 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "consUser",
+            "otherEntityName": "user",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "consultancyProfile"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "consultancyTitle",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20180406181624",
+    "entityTableName": "consultancy_profile",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "angularJSSuffix": "jobportal",
+    "microserviceName": "JhipsterDemo"
+}

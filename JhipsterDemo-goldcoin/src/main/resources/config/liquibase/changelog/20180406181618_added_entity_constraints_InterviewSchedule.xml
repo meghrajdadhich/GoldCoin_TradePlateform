@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+    <!--
+        Added the constraints for entity InterviewSchedule.
+    -->
+    <changeSet id="20180406181618-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="interviewerhr_id"
+                                 baseTableName="interview_schedule"
+                                 constraintName="fk_interview_schedule_interviewerhr_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="jhi_user"/>
+
+        <addForeignKeyConstraint baseColumnNames="interviewer_cons_id"
+                                 baseTableName="interview_schedule"
+                                 constraintName="fk_interview_schedule_interviewer_cons_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="jhi_user"/>
+
+        <addForeignKeyConstraint baseColumnNames="interviewer_canditate_id"
+                                 baseTableName="interview_schedule"
+                                 constraintName="fk_interview_schedule_interviewer_canditate_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="jhi_user"/>
+
+        <addForeignKeyConstraint baseColumnNames="interviewer_cordinator_id"
+                                 baseTableName="interview_schedule"
+                                 constraintName="fk_interview_schedule_interviewer_cordinator_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="jhi_user"/>
+
+        <addForeignKeyConstraint baseColumnNames="interview_location_id"
+                                 baseTableName="interview_schedule"
+                                 constraintName="fk_interview_schedule_interview_location_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="location"/>
+
+        <addForeignKeyConstraint baseColumnNames="job_interview_id"
+                                 baseTableName="interview_schedule"
+                                 constraintName="fk_interview_schedule_job_interview_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="job"/>
+
+        <addForeignKeyConstraint baseColumnNames="by_user_id"
+                                 baseTableName="interview_schedule"
+                                 constraintName="fk_interview_schedule_by_user_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="jhi_user"/>
+
+        <addForeignKeyConstraint baseColumnNames="candidate_user_id"
+                                 baseTableName="interview_schedule"
+                                 constraintName="fk_interview_schedule_candidate_user_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="jhi_user"/>
+
+        <addForeignKeyConstraint baseColumnNames="recruiteriuser_id"
+                                 baseTableName="interview_schedule"
+                                 constraintName="fk_interview_schedule_recruiteriuser_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="jhi_user"/>
+
+        <addForeignKeyConstraint baseColumnNames="cordinator_user_id"
+                                 baseTableName="interview_schedule"
+                                 constraintName="fk_interview_schedule_cordinator_user_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="jhi_user"/>
+
+        <addForeignKeyConstraint baseColumnNames="consultancy_user_id"
+                                 baseTableName="interview_schedule"
+                                 constraintName="fk_interview_schedule_consultancy_user_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="jhi_user"/>
+
+        <addForeignKeyConstraint baseColumnNames="company_user_id"
+                                 baseTableName="interview_schedule"
+                                 constraintName="fk_interview_schedule_company_user_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="jhi_user"/>
+
+    </changeSet>
+</databaseChangeLog>

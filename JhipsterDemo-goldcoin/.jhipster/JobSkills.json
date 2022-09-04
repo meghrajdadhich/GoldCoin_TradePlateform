@@ -1,0 +1,18 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "jobskillName",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20180406181621",
+    "entityTableName": "job_skills",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "angularJSSuffix": "jobportal",
+    "microserviceName": "JhipsterDemo"
+}

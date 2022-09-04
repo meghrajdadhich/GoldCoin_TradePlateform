@@ -1,0 +1,31 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipType": "many-to-many",
+            "otherEntityRelationshipName": "",
+            "relationshipName": "users",
+            "otherEntityName": "user",
+            "otherEntityField": "id",
+            "ownerSide": true
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "applyJobStartDate",
+            "fieldType": "Instant"
+        },
+        {
+            "fieldName": "applyJobEndDate",
+            "fieldType": "Instant"
+        }
+    ],
+    "changelogDate": "20180406181627",
+    "entityTableName": "apply_job",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "angularJSSuffix": "jobportal",
+    "microserviceName": "JhipsterDemo"
+}

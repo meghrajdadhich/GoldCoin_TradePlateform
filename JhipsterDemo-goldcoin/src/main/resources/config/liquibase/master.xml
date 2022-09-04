@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+    <include file="config/liquibase/changelog/00000000000000_initial_schema.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180406181612_added_entity_PCTCBasicUser.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180406181613_added_entity_EducationalProfile.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180406181614_added_entity_Job.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180406181615_added_entity_Hierarchy.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180406181616_added_entity_Location.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180406181617_added_entity_Notification.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180406181618_added_entity_InterviewSchedule.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180406181619_added_entity_ProfessionalProfile.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180406181620_added_entity_Attendance.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180406181621_added_entity_JobSkills.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180406181622_added_entity_CandidateProfile.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180406181623_added_entity_CompanyProfile.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180406181624_added_entity_ConsultancyProfile.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180406181625_added_entity_Resume.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180406181626_added_entity_Recruiter.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180406181627_added_entity_ApplyJob.xml" relativeToChangelogFile="false"/>
+    <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
+    <include file="config/liquibase/changelog/20180406181613_added_entity_constraints_EducationalProfile.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180406181614_added_entity_constraints_Job.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180406181615_added_entity_constraints_Hierarchy.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180406181616_added_entity_constraints_Location.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180406181617_added_entity_constraints_Notification.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180406181618_added_entity_constraints_InterviewSchedule.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180406181619_added_entity_constraints_ProfessionalProfile.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180406181622_added_entity_constraints_CandidateProfile.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180406181623_added_entity_constraints_CompanyProfile.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180406181624_added_entity_constraints_ConsultancyProfile.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180406181625_added_entity_constraints_Resume.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180406181626_added_entity_constraints_Recruiter.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180406181627_added_entity_constraints_ApplyJob.xml" relativeToChangelogFile="false"/>
+    <!-- jhipster-needle-liquibase-add-constraints-changelog - JHipster will add liquibase constraints changelogs here -->
+</databaseChangeLog>

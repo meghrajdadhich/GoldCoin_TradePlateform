@@ -1,0 +1,39 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "parentUser",
+            "otherEntityName": "user",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "hierarchy"
+        },
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "childUser",
+            "otherEntityName": "user",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "hierarchy"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "reportStartDate",
+            "fieldType": "Instant"
+        },
+        {
+            "fieldName": "reportEndDate",
+            "fieldType": "Instant"
+        }
+    ],
+    "changelogDate": "20180406181615",
+    "entityTableName": "hierarchy",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "angularJSSuffix": "jobportal",
+    "microserviceName": "JhipsterDemo"
+}

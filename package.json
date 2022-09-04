@@ -1,0 +1,17 @@
+{
+  "name": "gold-coin",
+  "version": "0.0.0",
+  "description": "Description for GoldCoin",
+  "private": true,
+  "license": "UNLICENSED",
+  "cacheDirectories": [
+    "node_modules"
+  ],
+  "devDependencies": {
+    "generator-jhipster-primeng-charts": "0.0.3",
+    "generator-jhipster": "4.13.2"
+  },
+  "engines": {
+    "node": ">=6.9.0"
+  }
+}

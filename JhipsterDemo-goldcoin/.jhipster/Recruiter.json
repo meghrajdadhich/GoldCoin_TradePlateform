@@ -1,0 +1,37 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "users",
+            "otherEntityName": "user",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "recruiter"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "jobTask",
+            "otherEntityName": "job",
+            "otherEntityRelationshipName": "recruiter"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "recruiterStartDate",
+            "fieldType": "Instant"
+        },
+        {
+            "fieldName": "recruiterEndDate",
+            "fieldType": "Instant"
+        }
+    ],
+    "changelogDate": "20180406181626",
+    "entityTableName": "recruiter",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "angularJSSuffix": "jobportal",
+    "microserviceName": "JhipsterDemo"
+}

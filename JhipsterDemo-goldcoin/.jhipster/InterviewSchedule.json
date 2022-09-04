@@ -1,0 +1,123 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "interviewerHR",
+            "otherEntityName": "user",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "interviewSchedule"
+        },
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "interviewerCons",
+            "otherEntityName": "user",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "interviewSchedule"
+        },
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "interviewerCanditate",
+            "otherEntityName": "user",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "interviewSchedule"
+        },
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "interviewerCordinator",
+            "otherEntityName": "user",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "interviewSchedule"
+        },
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "interviewLocation",
+            "otherEntityName": "location",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "interviewSchedule"
+        },
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "jobInterview",
+            "otherEntityName": "job",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "interviewSchedule"
+        },
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "byUser",
+            "otherEntityName": "user",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "interviewSchedule"
+        },
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "candidateUser",
+            "otherEntityName": "user",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "interviewSchedule"
+        },
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "recruiterIUser",
+            "otherEntityName": "user",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "interviewSchedule"
+        },
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "cordinatorUser",
+            "otherEntityName": "user",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "interviewSchedule"
+        },
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "consultancyUser",
+            "otherEntityName": "user",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "interviewSchedule"
+        },
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "companyUser",
+            "otherEntityName": "user",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "interviewSchedule"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "intschId",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "intschTime",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "intschStatus",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20180406181618",
+    "entityTableName": "interview_schedule",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "angularJSSuffix": "jobportal",
+    "microserviceName": "JhipsterDemo"
+}

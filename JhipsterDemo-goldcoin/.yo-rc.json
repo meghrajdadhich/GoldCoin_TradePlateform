@@ -1,0 +1,40 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.pctc.goldcoin"
+    },
+    "jhipsterVersion": "4.13.2",
+    "baseName": "JhipsterDemo",
+    "packageName": "com.pctc.goldcoin",
+    "packageFolder": "com/pctc/goldcoin",
+    "serverPort": "8081",
+    "authenticationType": "jwt",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": false,
+    "clusteredHttpSession": false,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Memory",
+    "prodDatabaseType": "mysql",
+    "searchEngine": "elasticsearch",
+    "messageBroker": false,
+    "serviceDiscoveryType": "eureka",
+    "buildTool": "maven",
+    "enableSocialSignIn": false,
+    "enableSwaggerCodegen": true,
+    "jwtSecretKey": "57e72a6cea05e893b66736e3a959f63acb538a18",
+    "enableTranslation": false,
+    "applicationType": "microservice",
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "otherModules": [
+      {
+        "name": "generator-jhipster-swagger2markup",
+        "version": "1.2.0"
+      }
+    ],
+    "clientPackageManager": "yarn",
+    "skipClient": true,
+    "skipUserManagement": true
+  }
+}

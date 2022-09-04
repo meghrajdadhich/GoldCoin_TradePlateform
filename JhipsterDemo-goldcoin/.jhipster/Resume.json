@@ -1,0 +1,39 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "resumeUser",
+            "otherEntityName": "user",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "resume"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "resumeEducation",
+            "otherEntityName": "educationalProfile",
+            "otherEntityRelationshipName": "resume"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "resumeProfessinal",
+            "otherEntityName": "professionalProfile",
+            "otherEntityRelationshipName": "resume"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "resumeUpdateDate",
+            "fieldType": "Instant"
+        }
+    ],
+    "changelogDate": "20180406181625",
+    "entityTableName": "resume",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "angularJSSuffix": "jobportal",
+    "microserviceName": "JhipsterDemo"
+}

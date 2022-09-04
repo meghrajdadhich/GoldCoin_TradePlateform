@@ -1,0 +1,43 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "companyUser",
+            "otherEntityName": "user",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "companyProfile"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "clientName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "clientContactPersonName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "clientUpdateDate",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "clientLocation",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "clientStatus",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20180406181623",
+    "entityTableName": "company_profile",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "angularJSSuffix": "jobportal",
+    "microserviceName": "JhipsterDemo"
+}

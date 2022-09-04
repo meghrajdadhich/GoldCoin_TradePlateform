@@ -1,0 +1,31 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "candidateUser",
+            "otherEntityName": "user",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "candidateProfile"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "candidateId",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "userId",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20180406181622",
+    "entityTableName": "candidate_profile",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "angularJSSuffix": "jobportal",
+    "microserviceName": "JhipsterDemo"
+}

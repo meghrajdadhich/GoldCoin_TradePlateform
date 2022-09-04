@@ -1,0 +1,75 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "notiBy",
+            "otherEntityName": "user",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "notification"
+        },
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "notiTo",
+            "otherEntityName": "user",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "notification"
+        },
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "notiComp",
+            "otherEntityName": "companyProfile",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "notification"
+        },
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "notiLoc",
+            "otherEntityName": "location",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "notification"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "notiId",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "notiTitle",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "notiSubject",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "notiValue",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "notiType",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "notiStartDate",
+            "fieldType": "Instant"
+        },
+        {
+            "fieldName": "notiEndDate",
+            "fieldType": "Instant"
+        }
+    ],
+    "changelogDate": "20180406181617",
+    "entityTableName": "notification",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "angularJSSuffix": "jobportal",
+    "microserviceName": "JhipsterDemo"
+}

@@ -1,0 +1,41 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipName": "resume",
+            "otherEntityName": "resume",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "proTitle",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "proCompanyName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "proStartDate",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "proEndDate",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "proLocation",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20180406181619",
+    "entityTableName": "professional_profile",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "angularJSSuffix": "jobportal",
+    "microserviceName": "JhipsterDemo"
+}

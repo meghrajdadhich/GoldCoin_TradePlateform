@@ -1,0 +1,70 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "dateOfBirth",
+            "fieldType": "Instant"
+        },
+        {
+            "fieldName": "contactNumber",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "gender",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "addressLine1",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "addressLine2",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "landMark",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "subArea",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "city",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "state",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "country",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "pinCode",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "partyType",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "refUserId",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "nationality",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20180406181612",
+    "entityTableName": "pctc_basic_user",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "angularJSSuffix": "jobportal",
+    "microserviceName": "JhipsterDemo"
+}

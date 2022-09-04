@@ -1,0 +1,180 @@
+entity PCTCBasicUser{
+	dateOfBirth Instant,
+    contactNumber String,
+    gender String,
+    addressLine1 String,
+    addressLine2 String,
+    landMark String,
+    subArea String,
+    city String,
+    state String,
+    country String,
+    pinCode String,
+    partyType String,
+    refUserId String,
+    nationality String,
+}
+
+
+entity EducationalProfile{
+	eduTitle String,
+    eduStartDate String,
+    eduEndDate String,
+    eduUniversity String,
+    eduCollageName String,
+    eduLocation String,
+}
+
+
+entity Job{
+	jobId Long,
+    jobTitle  String,
+    jobDescription  String,
+    jobRole  String,
+    jobType  String,
+    jobIndustry String,
+    jobRole String,
+    jobSalary String,
+    jobStartDate Instant,
+    jobEndDate Instant,
+}
+
+entity Hierarchy{
+    reportStartDate Instant,
+    reportEndDate Instant
+}
+
+ 
+entity Location{
+	locId Long,
+    locType String, //Office, Interview,
+    locTitle String,
+    locAddress2 String,
+    locAddress1 String,
+    locArea String,
+    locCity String,
+    locState String,
+    locCountry String,
+    locPinCode String
+}
+
+entity Notification{
+	notiId String,
+    notiTitle String,
+    notiSubject String,
+    notiValue String,
+    notiType String, //EMail, SMS, MobileApp
+    notiStartDate Instant,
+    notiEndDate Instant
+}
+
+entity InterviewSchedule{
+	intschId Long,
+    intschTime String,
+    intschStatus String
+}
+
+
+entity ProfessionalProfile{
+	proTitle String,
+    proCompanyName String,
+    proStartDate  String,
+    proEndDate String,
+    proLocation String,
+}
+
+entity Attendance{
+	attandanceDate String,
+    attandanceStartTime String,
+    attandanceEndTime String,
+}
+
+entity JobSkills{
+	jobskillName String
+}
+
+entity CandidateProfile{
+	candidateId String,
+    
+	userId String,
+}
+
+entity CompanyProfile{
+    clientName String,
+    clientContactPersonName String,
+    clientUpdate_Date String,
+    clientLocation String,
+    clientStatus String,
+}
+
+entity ConsultancyProfile{
+	consultancyTitle String,
+}
+
+entity Resume{
+	resumeUpdateDate Instant,
+}
+
+entity Recruiter{
+	recruiterStartDate Instant,
+	recruiterEndDate Instant
+}
+
+entity ApplyJob{
+	applyJobStartDate Instant,
+	applyJobEndDate Instant
+}
+
+relationship OneToOne{
+	Location {user} to User,
+   	Job {jobReviewer} to  User,
+	Notification {notiBy} to User,
+	Notification {notiTo} to User,
+	Notification {notiComp} to  CompanyProfile,
+	Notification {notiLoc} to  Location,
+	Resume {resumeUser} to  User,
+	Recruiter {users} to User,
+	CandidateProfile {candidateUser} to  User,
+	CompanyProfile {companyUser} to User,
+	ConsultancyProfile {consUser} to User,
+    Job {jobCompany} to CompanyProfile,
+	Job {jobLocation} to Location,
+	InterviewSchedule {interviewerHR} to User,
+	InterviewSchedule {interviewerCons} to User,
+	InterviewSchedule {interviewerCanditate} to User,
+	InterviewSchedule {interviewerCordinator} to User,
+	InterviewSchedule {interviewLocation} to Location,
+	InterviewSchedule {jobInterview} to Job,
+	InterviewSchedule {byUser} to User,
+	InterviewSchedule {candidateUser} to User,
+	InterviewSchedule {recruiterIUser} to User,
+	InterviewSchedule {cordinatorUser} to User,
+	InterviewSchedule {consultancyUser} to User,
+	InterviewSchedule {companyUser} to User,
+	Hierarchy {parentUser} to User,
+	Hierarchy {childUser} to User
+}
+
+relationship OneToMany{
+	Resume {resumeEducation} to  EducationalProfile,
+	Resume {resumeProfessinal} to  ProfessionalProfile
+}
+
+relationship ManyToOne{
+	Job {recruiter} to Recruiter {jobTask} 
+}
+
+
+relationship ManyToMany{
+	ApplyJob {users} to User,
+	Job {skills} to JobSkills
+}
+
+// Set pagination options
+paginate PCTCBasicUser, Job, Notification, InterviewSchedule, CandidateProfile, CompanyProfile, ConsultancyProfile, ApplyJob, Recruiter with pagination
+
+dto * with mapstruct
+// Set service options to all except few
+service all with serviceImpl 
+// Set an angular suffix
+angularSuffix * with jobportal
