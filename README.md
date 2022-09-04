@@ -1,9 +1,5 @@
 # GoldCoin
-This application was generated using JHipster 4.13.2, you can find documentation and help at [http://www.jhipster.tech/documentation-archive/v4.13.2](http://www.jhipster.tech/documentation-archive/v4.13.2).
-
-This is a "microservice" application intended to be part of a microservice architecture, please refer to the [Doing microservices with JHipster][] page of the documentation for more information.
-
-This application is configured for Service Discovery and Configuration with the JHipster-Registry. On launch, it will refuse to start if it is not able to connect to the JHipster-Registry at [http://localhost:8761](http://localhost:8761). For more information, read our documentation on [Service Discovery and Configuration with the JHipster-Registry][].
+An Hipster based Online Gold Conline Sale Portal Plateform as Java and  Microservice based technology. For frontend I am using Angular but later I can customize, as in when Reuqire I can customize and upgrade. feel free to write on megharaj.dadhich@gmail.com
 
 ## Development
 
